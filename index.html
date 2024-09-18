@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>密码验证</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+        }
+        input[type="password"] {
+            padding: 10px;
+            margin: 10px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>请输入密码</h1>
+        <input type="password" id="password" placeholder="密码">
+        <button onclick="checkPassword()">提交</button>
+    </div>
+
+    <script>
+        function checkPassword() {
+            var password = document.getElementById('password').value;
+            var correctPassword = 'yourPassword'; 
+            if (password === correctPassword) {
+                window.location.href = 'https://postimg.cc/3kdZhy01'; 
+            } else {
+                alert('密码错误，请重新输入。');
+            }
+        }
+    </script>
+</body>
+</html>
+
